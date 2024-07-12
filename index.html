@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CRM System</h1>
+        <nav>
+            <ul>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#sales">Sales</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacts">
+            <h2>Contact Management</h2>
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Name" required>
+                <input type="email" id="contactEmail" placeholder="Email" required>
+                <button type="submit">Add Contact</button>
+            </form>
+            <ul id="contactList"></ul>
+        </section>
+        <section id="sales">
+            <h2>Sales Pipeline</h2>
+            <form id="salesForm">
+                <input type="text" id="dealName" placeholder="Deal Name" required>
+                <input type="number" id="dealAmount" placeholder="Deal Amount" required>
+                <button type="submit">Add Deal</button>
+            </form>
+            <ul id="salesList"></ul>
+        </section>
+        <section id="tasks">
+            <h2>Task Management</h2>
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Task Name" required>
+                <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="taskList"></ul>
+        </section>
+        <section id="support">
+            <h2>Customer Support</h2>
+            <form id="supportForm">
+                <input type="text" id="ticketSubject" placeholder="Subject" required>
+                <textarea id="ticketDetails" placeholder="Details" required></textarea>
+                <button type="submit">Submit Ticket</button>
+            </form>
+            <ul id="supportList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
