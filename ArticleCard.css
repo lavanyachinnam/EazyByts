@@ -1,0 +1,11 @@
+.article-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.article-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,10 @@
+.news-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-feed .article-card {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+}
